@@ -1,0 +1,14 @@
+.btnSubmit{
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btnSubmit:hover{
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  opacity: 0.9;
+}
