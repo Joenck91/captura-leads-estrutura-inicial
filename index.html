@@ -26,7 +26,7 @@
             em compradores"<br> PRINCIPALMENTE SE VOCÊ NUNCA VENDEU NADA NA INTERNET!"</strong></p>
         <form id="formulario"
           action="https://script.google.com/macros/s/AKfycbwtZ1P6c-owNIKoa2GT-c9IbScYzs5cfWIm66GQ6SmwXIR_dmOqqgWIiTeD2cuvOB_w/exec"
-          method="POST" target="hidden_iframe">
+          method="POST">
           <input type="text" name="nome" placeholder="Seu nome" required />
           <input type="email" name="email" placeholder="Seu melhor e-mail" required />
           <input type="tel" name="telefone" id="tel" placeholder="Seu whatsapp" required />
@@ -40,6 +40,21 @@
     </div>
   </div>
 </body>
+
 <script type="module" src="index.js"></script>
+<script>
+  const form = document.getElementById("formulario");
+  form.addEventListener("submit", function (e) {
+    // só exibe mensagem depois que o envio ao Google Script aconteceu
+    setTimeout(() => {
+      const msg = document.createElement("p");
+      msg.textContent = "✅ Seus dados foram enviados com sucesso!";
+      msg.style.color = "green";
+      form.appendChild(msg);
+      form.reset();
+    }, 500);
+  });
+</script>
+
 
 </html>
