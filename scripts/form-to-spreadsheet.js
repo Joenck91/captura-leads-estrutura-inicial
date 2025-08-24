@@ -12,9 +12,7 @@ export default function submitForm() {
     try {
       const response = await fetch('https://script.google.com/macros/s/AKfycbwtZ1P6c-owNIKoa2GT-c9IbScYzs5cfWIm66GQ6SmwXIR_dmOqqgWIiTeD2cuvOB_w/exec', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
-        },
+    
         body: formData.toString()
       });
 
