@@ -42,19 +42,7 @@
 </body>
 
 <script type="module" src="index.js"></script>
-<script>
-  const form = document.getElementById("formulario");
-  form.addEventListener("submit", function (e) {
-    // só exibe mensagem depois que o envio ao Google Script aconteceu
-    setTimeout(() => {
-      const msg = document.createElement("p");
-      msg.textContent = "✅ Seus dados foram enviados com sucesso!";
-      msg.style.color = "green";
-      form.appendChild(msg);
-      form.reset();
-    }, 500);
-  });
-</script>
+
 
 
 </html>
